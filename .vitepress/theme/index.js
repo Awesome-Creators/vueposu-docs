@@ -1,5 +1,6 @@
 import { ref } from "vue";
 import Layout from "./Layout.vue";
+import Foo from '../components/Foo.vue';
 
 export const testRef = ref({});
 
@@ -7,6 +8,7 @@ export default {
   Layout,
   NotFound: () => "custom 404", // <- this is a Vue 3 functional component
   enhanceApp({ app, router, siteData }) {
+    app.component('Foo', Foo)
     Reflect.defineProperty(app.config.globalProperties, "$ass", {
       get() {
         return testRef.value;

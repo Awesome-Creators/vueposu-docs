@@ -8,3 +8,5 @@ title: 男孩下个门
 ### sdfasdfsdf
 
 <div>{{$ass.count}} <button @click="$ass.add">test add</button></div>
+
+<Foo />
