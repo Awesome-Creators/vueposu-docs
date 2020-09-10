@@ -6,4 +6,9 @@ Because VuePress applications are server-rendered in Node.js when generating sta
 
 If you are using or demoing components that are not SSR friendly (for example containing custom directives), you can wrap them inside the built-in `<ClientOnly>` component:
 
-##
+{% raw %}
+
+{{ message }}
+
+Reverse Message
+<script> var app5 = new Vue({ el: '#app-5', data: { message: 'Hello Vue.js!' }, methods: { reverseMessage: function () { this.message = this.message.split('').reverse().join('') } } }) </script> {% endraw %}
