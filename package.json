@@ -1,9 +1,10 @@
 {
   "scripts": {
-    "start": "npx vitepress",
-    "build": "npx vitepress build"
+    "start": "vitepress dev docs",
+    "build": "vitepress build docs"
   },
   "devDependencies": {
-    "vitepress": "^0.5.0"
+    "vitepress": "^0.6.0",
+    "vueposu": "^0.0.4"
   }
 }
