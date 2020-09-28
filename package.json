@@ -4,7 +4,9 @@
     "build": "vitepress build docs"
   },
   "devDependencies": {
-    "vitepress": "^0.6.0",
+    "vitepress": "^0.6.0"
+  },
+  "dependencies": {
     "vueposu": "^0.0.4"
   }
 }
