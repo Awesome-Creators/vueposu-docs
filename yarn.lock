@@ -1500,7 +1500,7 @@ markdown-it@^10.0.0:
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
 
-mathjs@^7.2.0, mathjs@^7.3.0:
+mathjs@^7.2.0:
   version "7.3.0"
   resolved "https://registry.npmjs.org/mathjs/-/mathjs-7.3.0.tgz#02bce1341e7b7c839f91dc9d552e23e026de5288"
   integrity sha512-6PwW9yYyL9iDtgDYN2Dyjc2t+ZIlbGkKxm5RZk+PDv6Hc1lEtGF0axMf9mirZTKU4o31a3m2CpnC+d1hXTUo0g==
