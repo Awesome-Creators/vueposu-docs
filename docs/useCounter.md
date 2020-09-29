@@ -2,6 +2,8 @@
 
 > A hook that can manage the count.
 
+<br />
+
 ## Usage
 
 <script>
@@ -51,10 +53,11 @@ export default {
 };
 </script>
 ```
+
+<br />
+
 <style>code { line-height: 1.85em; }</style>
 ## Result
-
-
 
 | Property | Type | Description |
 |-|-|-|
@@ -63,6 +66,8 @@ export default {
 | _dec_ | `(x?: number | string | Ref<number | string>) => void` | decrement incoming number or step number |
 | _set_ | `(setCount: number | string | Ref<number | string> | ((current: number) => number)) => void` | set current count |
 | _reset_ | `() => void` | reset to initial count |
+
+<br />
 
 ## Params
 
