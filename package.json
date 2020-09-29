@@ -7,6 +7,6 @@
     "vitepress": "^0.6.0"
   },
   "dependencies": {
-    "vueposu": "^0.0.5"
+    "vueposu": "latest"
   }
 }
