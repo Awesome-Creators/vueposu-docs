@@ -21,6 +21,8 @@ module.exports = {
       },
     ],
     sidebar: [dom, functionality, cache, sideEffect],
-    editLinks: true,
+    // editLinks: true,
+    // editLinkText: 'Help us improve this page!',
+    // lastUpdated: true
   },
 };
