@@ -1,3 +1,7 @@
+---
+title: useCounter
+---
+
 # useCounter
 
 > A hook that can manage the count.
@@ -62,7 +66,7 @@ export default {
 
 | Property | Type | Description |
 |-|-|-|
-| _count_ | `number | string | Ref<number | string>` | current count |
+| _count_ | `Ref<number>` | current count |
 | _inc_ | `(x?: number | string | Ref<number | string>) => void` | increment incoming number or step number |
 | _dec_ | `(x?: number | string | Ref<number | string>) => void` | decrement incoming number or step number |
 | _set_ | `(setCount: number | string | Ref<number | string> | ((current: number) => number)) => void` | set current count |
