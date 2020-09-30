@@ -13,8 +13,7 @@
 </template>
 
 <script lang="ts">
-// TODO: wait vitepress upgrade to fix
-import useCounter from "vueposu/hooks/useCounter";
+import { useCounter } from "vueposu";
 
 export default {
   setup() {
