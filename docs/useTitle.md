@@ -23,7 +23,7 @@ export default {
 
 ```vue
 <template>
-  <div class="container">
+  <div>
     <p>current title: <input v-model="title" /></p>
   </div>
 </template>
@@ -49,14 +49,14 @@ export default {
 
 ## Result
 
-| Property | Type | Description |
-|-|-|-|
-| _title_ | `Ref<number>` | current title value |
+| Property | Type          | Description         |
+| -------- | ------------- | ------------------- |
+| _title_  | `Ref<number>` | current title value |
 
 <br />
 
 ## Params
 
-| Property | Type | Required | Default | Description |
-|-|-|-|-|-|
+| Property         | Type    | Required     | Default | Description      |
+| ---------------- | ------- | ------------ | ------- | ---------------- |
 | _overridedTitle_ | `string | Ref<string>` | `false` | `document.title` | set to override title value |
