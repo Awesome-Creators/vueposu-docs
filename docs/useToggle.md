@@ -23,7 +23,7 @@ export default {
 
 ```vue
 <template>
-  <div class="container">
+  <div>
     <p>status: {{ status }}</p>
     <p>
       <button @click="toggle()">toggle</button
@@ -57,18 +57,18 @@ export default {
 
 ## Result
 
-| Property | Type | Description |
-|-|-|-|
-| _status_ | `Ref<any>` | current status value |
-| _toggle_ | `(value?: any) => void` | status change trigger |
-| _setLeft_ | `() => void` | set default value |
-| _setRight_ | `() => void` | set reverse value |
+| Property   | Type                    | Description           |
+| ---------- | ----------------------- | --------------------- |
+| _status_   | `Ref<any>`              | current status value  |
+| _toggle_   | `(value?: any) => void` | status change trigger |
+| _setLeft_  | `() => void`            | set default value     |
+| _setRight_ | `() => void`            | set reverse value     |
 
 <br />
 
 ## Params
 
-| Property | Type | Required | Default | Description |
-|-|-|-|-|-|
-| _defaultValue_ | `string | number | boolean | Ref<string | number | boolean>` | `false` | `true` | set the default value |
-| _reverseValue_ | `string | number | boolean | Ref<string | number | boolean>` | `false` | `!defaultValue` | set the reverse value |
+| Property       | Type    | Required | Default | Description |
+| -------------- | ------- | -------- | ------- | ----------- |
+| _defaultValue_ | `string | number   | boolean | Ref<string  | number | boolean>` | `false` | `true` | set the default value |
+| _reverseValue_ | `string | number   | boolean | Ref<string  | number | boolean>` | `false` | `!defaultValue` | set the reverse value |
