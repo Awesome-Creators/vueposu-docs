@@ -8,7 +8,7 @@ module.exports = {
   description: "A hooks library based on Vue composition-api",
 
   themeConfig: {
-    logo: "./logo.jpg",
+    // logo: ".vitepress/logo.jpg",
     search: {},
     nav: [
       // {

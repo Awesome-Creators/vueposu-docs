@@ -1,1 +1,1 @@
-useSWR
+stale-while-revalidate
