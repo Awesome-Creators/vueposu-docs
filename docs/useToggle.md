@@ -4,7 +4,7 @@ title: useToggle
 
 # useToggle
 
-> A hook that can toggle the status of a switch.
+> A hook that can toggle the state of a switch.
 
 <br />
 
@@ -24,7 +24,7 @@ export default {
 ```vue
 <template>
   <div>
-    <p>status: {{ status }}</p>
+    <p>state: {{ state }}</p>
     <p>
       <button @click="toggle()">toggle</button
       ><button @click="setLeft">set left</button
@@ -38,10 +38,10 @@ import { useToggle } from "vueposu";
 
 export default {
   setup() {
-    const [status, { toggle, setLeft, setRight }] = useToggle("left", "right");
+    const { state, toggle, setLeft, setRight } = useToggle("left", "right");
 
     return {
-      status,
+      state,
       toggle,
       setLeft,
       setRight,
@@ -57,12 +57,12 @@ export default {
 
 ## Result
 
-| Property   | Type                    | Description           |
-| ---------- | ----------------------- | --------------------- |
-| _status_   | `Ref<any>`              | current status value  |
-| _toggle_   | `(value?: any) => void` | status change trigger |
-| _setLeft_  | `() => void`            | set default value     |
-| _setRight_ | `() => void`            | set reverse value     |
+| Property   | Type                    | Description          |
+| ---------- | ----------------------- | -------------------- |
+| _state_    | `Ref<any>`              | current state value  |
+| _toggle_   | `(value?: any) => void` | state change trigger |
+| _setLeft_  | `() => void`            | set default value    |
+| _setRight_ | `() => void`            | set reverse value    |
 
 <br />
 

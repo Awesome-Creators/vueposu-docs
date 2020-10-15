@@ -42,9 +42,9 @@ export default {
     const a = ref();
     const b = ref();
 
-    useClickAway(() => {
+    useClickAway([a, b], () => {
       count.value += 1;
-    }, [a, b]);
+    });
 
     return {
       count,
@@ -66,6 +66,6 @@ export default {
 
 | Property       | Type                | Required            | Default                | Description           |
 | -------------- | ------------------- | ------------------- | ---------------------- | --------------------- |
-| _eventHandler_ | `(event: MouseEvent | TouchEvent) => void | Ref<(event: MouseEvent | TouchEvent) => void>` | `true` | - | handler function on external click |
 | _target_       | `HTMLElement        | () => HTMLElement   | Ref<HTMLElement>       | (HTMLElement          | (() => HTMLElement) | Ref<HTMLElement>)[]` | `true` | - | execution handler target |
+| _eventHandler_ | `(event: MouseEvent | TouchEvent) => void | Ref<(event: MouseEvent | TouchEvent) => void>` | `true` | - | handler function on external click |
 | _eventName_    | `string             | string[]            | Ref<string             | string[]>`            | `false` | `click` | event trigger |

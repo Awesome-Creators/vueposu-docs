@@ -23,12 +23,12 @@ export default {
 
 ```vue
 <template>
-  <div ref="a">
+  <div ref="container">
     <p>is fullscreen: {{ isFullscreen }}</p>
     <p>fullscreen times: {{ count }}</p>
     <p>
       <button @click="setFullscreen">set fullscreen</button>
-      <button @click="exitFullscreen">exit fullscreen</button>
+      <button @click="enterFullscreen">exit fullscreen</button>
       <button @click="toggleFullscreen()">toggle fullscreen</button>
     </p>
   </div>
@@ -40,22 +40,24 @@ import { useFullscreen } from "vueposu";
 
 export default {
   setup() {
-    const a = ref();
+    const container = ref();
     const count = ref(0);
-    const [
+    const {
       isFullscreen,
-      { setFullscreen, exitFullscreen, toggleFullscreen },
-    ] = useFullscreen(a, () => {
+      enterFullscreen,
+      exitFullscreen,
+      toggleFullscreen,
+    } = useFullscreen(container, () => {
       if (isFullscreen.value) count.value++;
     });
 
     return {
       isFullscreen,
-      setFullscreen,
+      enterFullscreen,
       exitFullscreen,
       toggleFullscreen,
+      container,
       count,
-      a,
     };
   },
 };
@@ -71,7 +73,7 @@ export default {
 | Property           | Type               | Description            |
 | ------------------ | ------------------ | ---------------------- |
 | _isFullscreen_     | `Ref<boolean>`     | full screen status     |
-| _setFullscreen_    | `() => void`       | set full screen        |
+| _enterFullscreen_    | `() => void`       | enter full screen        |
 | _exitFullscreen_   | `() => void`       | exit full screen       |
 | _toggleFullscreen_ | `(status?: boolean | Ref<boolean>) => void` | toggle full screen status |
 

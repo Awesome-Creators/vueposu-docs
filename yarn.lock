@@ -2278,10 +2278,10 @@ vue@^3.0.0, vue@^3.0.0-rc.11, vue@^3.0.0-rc.5:
     "@vue/runtime-dom" "3.0.0"
     "@vue/shared" "3.0.0"
 
-vueposu@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.npmjs.org/vueposu/-/vueposu-0.0.8.tgz#27586314ab973327507b4692a5fb700c16d390a0"
-  integrity sha512-yx1ADcJlZg5L0A3rBs0L+U1/eJ+BTMynVifQiUOLTrn5auXFHZ4YRmvUryHdjHLy6gtx0HP5nMT06oi4zBK8hA==
+vueposu@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.npmjs.org/vueposu/-/vueposu-0.0.9.tgz#6f2359b12d04f13ae0e98cb0aab10853ffbc5941"
+  integrity sha512-6g1cQmAEgReomANwPUsKJrzQWhmaajHMVKOQVM9jR3ghSIaxvEkxPemycb+GeRqtoPO5aEAxjKHAvFE0DDm8bQ==
   dependencies:
     "@types/lodash-es" "^4.17.3"
     "@types/mathjs" "^6.0.5"

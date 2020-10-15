@@ -1,9 +1,9 @@
 <template>
-  <div class="container" ref="a">
+  <div class="container" ref="container">
     <p>is fullscreen: {{ isFullscreen }}</p>
     <p>fullscreen times: {{ count }}</p>
     <p>
-      <button @click="setFullscreen">set fullscreen</button>
+      <button @click="enterFullscreen">enter fullscreen</button>
       <button @click="exitFullscreen">exit fullscreen</button>
       <button @click="toggleFullscreen()">toggle fullscreen</button>
     </p>
@@ -16,22 +16,24 @@ import { useFullscreen } from "vueposu";
 
 export default {
   setup() {
-    const a = ref();
+    const container = ref();
     const count = ref(0);
-    const [
+    const {
       isFullscreen,
-      { setFullscreen, exitFullscreen, toggleFullscreen },
-    ] = useFullscreen(a, () => {
+      enterFullscreen,
+      exitFullscreen,
+      toggleFullscreen,
+    } = useFullscreen(container, () => {
       if (isFullscreen.value) count.value++;
     });
 
     return {
       isFullscreen,
-      setFullscreen,
+      enterFullscreen,
       exitFullscreen,
       toggleFullscreen,
+      container,
       count,
-      a,
     };
   },
 };

@@ -41,11 +41,12 @@ import { useCounter } from "vueposu";
 
 export default {
   setup() {
-    const [count, { inc, dec, set, reset }] = useCounter(2, {
+    const { count, inc, dec, set, reset } = useCounter(2, {
       min: 1,
       max: 10,
       step: 2,
     });
+    
     return {
       count,
       inc,

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p>status: {{ status }}</p>
+    <p>state: {{ state }}</p>
     <p>
       <button @click="toggle()">toggle</button
       ><button @click="setLeft">set left</button
@@ -14,10 +14,10 @@ import { useToggle } from "vueposu";
 
 export default {
   setup() {
-    const [status, { toggle, setLeft, setRight }] = useToggle("left", "right");
+    const { state, toggle, setLeft, setRight } = useToggle("left", "right");
 
     return {
-      status,
+      state,
       toggle,
       setLeft,
       setRight,

@@ -18,9 +18,9 @@ export default {
     const a = ref();
     const b = ref();
 
-    useClickAway(() => {
+    useClickAway([a, b], () => {
       count.value += 1;
-    }, [a, b]);
+    });
 
     return {
       count,
