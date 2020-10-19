@@ -14,9 +14,9 @@ title: useCounter
 import UseCounterDemo from './.vitepress/components/UseCounterDemo.vue'
 
 export default {
-    components: {
-        UseCounterDemo
-    }
+  components: {
+    UseCounterDemo
+  }
 }
 </script>
 <UseCounterDemo />

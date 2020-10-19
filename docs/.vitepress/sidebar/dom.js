@@ -2,10 +2,10 @@ module.exports = {
   text: "DOM",
   collapsable: true,
   children: [
-    {
-      text: "useAudio",
-      link: "/useAudio",
-    },
+    // {
+    //   text: "useAudio",
+    //   link: "/useAudio",
+    // },
     {
       text: "useBrowserTabChange",
       link: "/useBrowserTabChange",
@@ -31,9 +31,13 @@ module.exports = {
       link: "/useMouse",
     },
     {
-      text: "useScrollTo",
-      link: "/useScrollTo",
+      text: "useScroll",
+      link: "/useScroll",
     },
+    // {
+    //   text: "useScrollTo",
+    //   link: "/useScrollTo",
+    // },
     {
       text: "useTitle",
       link: "/useTitle",

@@ -14,9 +14,9 @@ title: useClickAway
 import UseClickAwayDemo from './.vitepress/components/UseClickAwayDemo.vue'
 
 export default {
-    components: {
-        UseClickAwayDemo
-    }
+  components: {
+    UseClickAwayDemo
+  }
 }
 </script>
 <UseClickAwayDemo />

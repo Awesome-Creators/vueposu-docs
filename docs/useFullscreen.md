@@ -14,9 +14,9 @@ title: useFullscreen
 import UseFullscreenDemo from './.vitepress/components/UseFullscreenDemo.vue'
 
 export default {
-    components: {
-        UseFullscreenDemo
-    }
+  components: {
+    UseFullscreenDemo
+  }
 }
 </script>
 <UseFullscreenDemo />

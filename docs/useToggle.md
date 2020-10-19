@@ -14,9 +14,9 @@ title: useToggle
 import UseToggleDemo from './.vitepress/components/UseToggleDemo.vue'
 
 export default {
-    components: {
-        UseToggleDemo
-    }
+  components: {
+    UseToggleDemo
+  }
 }
 </script>
 <UseToggleDemo />

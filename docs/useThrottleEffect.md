@@ -1,1 +1,3 @@
-useThrottleEffect
+---
+title: useThrottleEffect
+---

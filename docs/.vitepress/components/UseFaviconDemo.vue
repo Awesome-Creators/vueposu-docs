@@ -1,27 +1,3 @@
----
-title: useFavicon
----
-
-# useFavicon
-
-> A hook that can change the favicon.
-
-<br />
-
-## Usage
-
-<script>
-import UseFaviconDemo from './.vitepress/components/UseFaviconDemo.vue'
-
-export default {
-  components: {
-    UseFaviconDemo
-  }
-}
-</script>
-<UseFaviconDemo />
-
-```vue
 <template>
   <div class="container">
     <span class="upload">
@@ -75,6 +51,10 @@ export default {
 
 <style scoped>
 .container {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
   display: flex;
   align-items: flex-end;
 }
@@ -110,17 +90,3 @@ export default {
   margin-left: 12px;
 }
 </style>
-```
-
-<br />
-
-<style>code { line-height: 1.85em; }</style>
-
-<br />
-
-## Result
-
-| Property      | Type                    | Description                                     |
-| ------------- | ----------------------- | ----------------------------------------------- |
-| _changeIcon_  | `(url: string) => void` | function which can change favicon               |
-| _restoreIcon_ | `() => void`            | function which will restore to original favicon |

@@ -2,10 +2,10 @@ module.exports = {
     text: "FUNCTIONALITY",
     collapsable: true,
     children: [
-      {
-        text: "useCalculator",
-        link: "/useCalculator",
-      },
+      // {
+      //   text: "useCalculator",
+      //   link: "/useCalculator",
+      // },
       {
         text: "useCounter",
         link: "/useCounter",
@@ -34,9 +34,13 @@ module.exports = {
         text: "useQueue",
         link: "/useQueue",
       },
+      // {
+      //   text: "useRaf",
+      //   link: "/useRaf",
+      // },
       {
-        text: "useRaf",
-        link: "/useRaf",
+        text: "useRequest",
+        link: "/useRequest",
       },
       {
         text: "useSet",

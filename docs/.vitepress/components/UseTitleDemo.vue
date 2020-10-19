@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <p>current title: <input v-model="title" /></p>
+    <p>current title: <input v-model="title" /> <button @click="restoreTitle">restore title</button></p>
   </div>
 </template>
 
@@ -9,10 +9,11 @@ import { useTitle } from "vueposu";
 
 export default {
   setup() {
-    const title = useTitle();
+    const { title, restoreTitle } = useTitle('custom title', false);
 
     return {
       title,
+      restoreTitle
     };
   },
 };

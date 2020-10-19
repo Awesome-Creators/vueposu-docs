@@ -14,9 +14,9 @@ title: useTitle
 import UseTitleDemo from './.vitepress/components/UseTitleDemo.vue'
 
 export default {
-    components: {
-        UseTitleDemo
-    }
+  components: {
+    UseTitleDemo
+  }
 }
 </script>
 <UseTitleDemo />
@@ -24,7 +24,10 @@ export default {
 ```vue
 <template>
   <div>
-    <p>current title: <input v-model="title" /></p>
+    <p>
+      current title: <input v-model="title" />
+      <button @click="restoreTitle">restore title</button>
+    </p>
   </div>
 </template>
 
@@ -33,10 +36,11 @@ import { useTitle } from "vueposu";
 
 export default {
   setup() {
-    const title = useTitle();
+    const { title, restoreTitle } = useTitle('custom title', false);
 
     return {
       title,
+      restoreTitle,
     };
   },
 };
@@ -49,14 +53,16 @@ export default {
 
 ## Result
 
-| Property | Type          | Description         |
-| -------- | ------------- | ------------------- |
-| _title_  | `Ref<number>` | current title value |
+| Property       | Type          | Description            |
+| -------------- | ------------- | ---------------------- |
+| _title_        | `Ref<number>` | current title value    |
+| _restoreTitle_ | `() => void`  | restore title function |
 
 <br />
 
 ## Params
 
-| Property         | Type    | Required     | Default | Description      |
-| ---------------- | ------- | ------------ | ------- | ---------------- |
-| _overridedTitle_ | `string | Ref<string>` | `false` | `document.title` | set to override title value |
+| Property           | Type     | Required      | Default | Description      |
+| ------------------ | -------- | ------------- | ------- | ---------------- |
+| _overridedTitle_   | `string  | Ref<string>`  | `false` | `document.title` | set to override title value |
+| _restoreOnUnmount_ | `boolean | Ref<boolean>` | `false` | `true`           | whether need restore the title on unmount |

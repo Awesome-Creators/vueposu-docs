@@ -1,1 +1,3 @@
-useThrottleFn
+---
+title: useThrottleFn
+---

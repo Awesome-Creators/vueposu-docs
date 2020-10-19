@@ -10,6 +10,14 @@ module.exports = {
         text: "useLocalStorage",
         link: "/useLocalStorage",
       },
+      {
+        text: "useSessionStorage",
+        link: "/useSessionStorage",
+      },
+      {
+        text: "useWebStorage",
+        link: "/useWebStorage",
+      },
     ],
   };
   

@@ -1,1 +1,3 @@
-useThrottle
+---
+title: useThrottle
+---
