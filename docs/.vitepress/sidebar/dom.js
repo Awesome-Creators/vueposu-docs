@@ -15,8 +15,8 @@ module.exports = {
       link: "/useClickAway",
     },
     {
-      text: "useCopyToClipboard",
-      link: "/useCopyToClipboard",
+      text: "useClipboard",
+      link: "/useClipboard",
     },
     {
       text: "useFavicon",

@@ -20,10 +20,10 @@ export default {
 
     const change = ({ target }: Event) => {
       const file = target.files[0];
-      if (file.type.indexOf("image") === 0) {
+      if (file && file.type.indexOf("image") === 0) {
         const reader = new FileReader();
         reader.readAsDataURL(file);
-        reader.onload = function (e) {
+        reader.onload = function () {
           icon.value = this.result;
         };
       }
