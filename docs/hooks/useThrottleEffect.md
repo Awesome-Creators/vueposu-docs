@@ -1,25 +1,25 @@
 ---
-title: useDebounceEffect
+title: useThrottleEffect
 ---
 
-# useDebounceEffect
+# useThrottleEffect
 
-> The debounce style side effect.
+> The throttle style side effect.
 
 <br />
 
 ## Usage
 
 <script>
-import UseDebounceEffectDemo from './.vitepress/components/UseDebounceEffectDemo.vue'
+import UseThrottleEffectDemo from './../.vitepress/components/UseThrottleEffectDemo.vue'
 
 export default {
   components: {
-    UseDebounceEffectDemo
+    UseThrottleEffectDemo
   }
 }
 </script>
-<UseDebounceEffectDemo />
+<UseThrottleEffectDemo />
 
 ```vue
 <template>
@@ -36,14 +36,14 @@ export default {
 
 <script lang="ts">
 import { ref, reactive } from "vue";
-import { useDebounceEffect } from "vueposu";
+import { useThrottleEffect } from "vueposu";
 
 export default {
   setup() {
     const text = ref('');
     const list = reactive([]);
 
-    useDebounceEffect(() => {
+    useThrottleEffect(() => {
       list.push(text.value);
     }, text, 400);
 
@@ -64,6 +64,6 @@ export default {
 
 | Property         | Type                                | Required     | Default | Description                                     |
 | ---------------- | ----------------------------------- | ------------ | ------- | ----------------------------------------------- |
-| _effectListener_ | `(value?: T, oldValue?: T) => void` | `true`       | `-`     | the debounced listener function to watch effect |
+| _effectListener_ | `(value?: T, oldValue?: T) => void` | `true`       | `-`     | the throttled listener function to watch effect |
 | _deps_           | `Ref<T>                             | Ref<T>[]`    | `true`  | `-`                                             | effect source |
 | _wait_           | `number                             | Ref<number>` | `false` | `0`                                             | the number of milliseconds to delay |

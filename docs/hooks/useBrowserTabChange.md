@@ -11,7 +11,7 @@ title: useBrowserTabChange
 ## Usage
 
 <script>
-import UseBrowserTabChangeDemo from './.vitepress/components/UseBrowserTabChangeDemo.vue'
+import UseBrowserTabChangeDemo from './../.vitepress/components/UseBrowserTabChangeDemo.vue'
 
 export default {
   components: {

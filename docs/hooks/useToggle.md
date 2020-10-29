@@ -11,7 +11,7 @@ title: useToggle
 ## Usage
 
 <script>
-import UseToggleDemo from './.vitepress/components/UseToggleDemo.vue'
+import UseToggleDemo from './../.vitepress/components/UseToggleDemo.vue'
 
 export default {
   components: {

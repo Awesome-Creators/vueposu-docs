@@ -1,46 +1,46 @@
 ---
-title: useThrottle
+title: useDebounce
 ---
 
-# useThrottle
+# useDebounce
 
-> A hook that can use throttle to handle the value.
+> A hook that can use debounce to handle the value.
 
 <br />
 
 ## Usage
 
 <script>
-import UseThrottleDemo from './.vitepress/components/UseThrottleDemo.vue'
+import UseDebounceDemo from './../.vitepress/components/UseDebounceDemo.vue'
 
 export default {
   components: {
-    UseThrottleDemo
+    UseDebounceDemo
   }
 }
 </script>
-<UseThrottleDemo />
+<UseDebounceDemo />
 
 ```vue
 <template>
   <div>
     <p>Typed text: <input type="text" v-model="typed" /></p>
-    <p>Throttled text: {{ throttledValue }}</p>
+    <p>Debounced text: {{ debouncedValue }}</p>
   </div>
 </template>
 
 <script lang="ts">
 import { ref } from "vue";
-import { useThrottled } from "vueposu";
+import { useDebounce } from "vueposu";
 
 export default {
   setup() {
     const typed = ref("");
-    const throttledValue = Throttled(typed, 400);
+    const debouncedValue = useDebounce(typed, 400);
 
     return {
       typed,
-      throttledValue
+      debouncedValue,
     };
   },
 };
@@ -55,7 +55,7 @@ export default {
 
 | Property         | Type     | Description     |
 | ---------------- | -------- | --------------- |
-| _throttledValue_ | `Ref<T>` | throttled value |
+| _debouncedValue_ | `Ref<T>` | debounced value |
 
 <br />
 
@@ -63,5 +63,5 @@ export default {
 
 | Property | Type     | Required     | Default | Description                  |
 | -------- | -------- | ------------ | ------- | ---------------------------- |
-| _value_  | `Ref<T>` | `true`       | `-`     | value that requires throttle |
+| _value_  | `Ref<T>` | `true`       | `-`     | value that requires debounce |
 | _wait_   | `number  | Ref<number>` | `false` | `0`                          | the number of milliseconds to delay |

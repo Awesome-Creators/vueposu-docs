@@ -11,7 +11,7 @@ title: useScroll
 ## Usage
 
 <script>
-import UseScrollDemo from './.vitepress/components/UseScrollDemo.vue'
+import UseScrollDemo from './../.vitepress/components/UseScrollDemo.vue'
 
 export default {
   components: {

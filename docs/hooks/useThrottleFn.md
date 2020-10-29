@@ -11,7 +11,7 @@ title: useThrottleFn
 ## Usage
 
 <script>
-import UseThrottleFnDemo from './.vitepress/components/UseThrottleFnDemo.vue'
+import UseThrottleFnDemo from './../.vitepress/components/UseThrottleFnDemo.vue'
 
 export default {
   components: {

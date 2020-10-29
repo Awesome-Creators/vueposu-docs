@@ -11,7 +11,7 @@ title: useMouse
 ## Usage
 
 <script>
-import UseMouseDemo from './.vitepress/components/UseMouseDemo.vue'
+import UseMouseDemo from './../.vitepress/components/UseMouseDemo.vue'
 
 export default {
   components: {

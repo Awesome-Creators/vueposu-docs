@@ -11,7 +11,7 @@ title: useDebounceFn
 ## Usage
 
 <script>
-import UseDebounceFnDemo from './.vitepress/components/UseDebounceFnDemo.vue'
+import UseDebounceFnDemo from './../.vitepress/components/UseDebounceFnDemo.vue'
 
 export default {
   components: {

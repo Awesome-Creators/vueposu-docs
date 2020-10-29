@@ -11,7 +11,7 @@ title: useCounter
 ## Usage
 
 <script>
-import UseCounterDemo from './.vitepress/components/UseCounterDemo.vue'
+import UseCounterDemo from './../.vitepress/components/UseCounterDemo.vue'
 
 export default {
   components: {

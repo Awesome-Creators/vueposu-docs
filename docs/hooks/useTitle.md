@@ -11,7 +11,7 @@ title: useTitle
 ## Usage
 
 <script>
-import UseTitleDemo from './.vitepress/components/UseTitleDemo.vue'
+import UseTitleDemo from './../.vitepress/components/UseTitleDemo.vue'
 
 export default {
   components: {

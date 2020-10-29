@@ -11,7 +11,7 @@ title: useClipboard
 ## Usage
 
 <script>
-import UseClipboardDemo from './.vitepress/components/UseClipboardDemo.vue'
+import UseClipboardDemo from './../.vitepress/components/UseClipboardDemo.vue'
 
 export default {
   components: {

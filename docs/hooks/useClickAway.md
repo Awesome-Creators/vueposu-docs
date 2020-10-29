@@ -11,7 +11,7 @@ title: useClickAway
 ## Usage
 
 <script>
-import UseClickAwayDemo from './.vitepress/components/UseClickAwayDemo.vue'
+import UseClickAwayDemo from './../.vitepress/components/UseClickAwayDemo.vue'
 
 export default {
   components: {

@@ -11,7 +11,7 @@ title: useFavicon
 ## Usage
 
 <script>
-import UseFaviconDemo from './.vitepress/components/UseFaviconDemo.vue'
+import UseFaviconDemo from './../.vitepress/components/UseFaviconDemo.vue'
 
 export default {
   components: {
