@@ -34,7 +34,7 @@ import { useBrowserTabChange, useTitle } from "vueposu";
 
 export default {
   setup() {
-    const { title, restoreTitle } = useTitle(null, false);
+    const { title, restoreTitle } = useTitle(document.title, false);
     useBrowserTabChange((isHidden) => {
       if (isHidden) {
         title.value = "page is hidden !";

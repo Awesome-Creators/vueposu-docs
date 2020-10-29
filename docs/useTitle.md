@@ -55,7 +55,7 @@ export default {
 
 | Property       | Type          | Description            |
 | -------------- | ------------- | ---------------------- |
-| _title_        | `Ref<number>` | current title value    |
+| _title_        | `Ref<string>` | current title value    |
 | _restoreTitle_ | `() => void`  | restore title function |
 
 <br />
