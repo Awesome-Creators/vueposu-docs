@@ -53,15 +53,15 @@ export default {
 
 ## Result
 
-| Property | Type          | Description                  |
-| -------- | ------------- | ---------------------------- |
-| _debouncedValue_  | `Ref<string>` | debounced value |
+| Property         | Type     | Description     |
+| ---------------- | -------- | --------------- |
+| _debouncedValue_ | `Ref<T>` | debounced value |
 
 <br />
 
 ## Params
 
-| Property           | Type     | Required      | Default | Description      |
-| ------------------ | -------- | ------------- | ------- | ---------------- |
-| _value_   | `Ref<string>`  | `true` | `-` | value that requires debounce |
-| _restoreOnUnmount_ | `boolean | Ref<boolean>` | `false` | `true`           | whether need restore the title on unmount |
+| Property | Type     | Required     | Default | Description                  |
+| -------- | -------- | ------------ | ------- | ---------------------------- |
+| _value_  | `Ref<T>` | `true`       | `-`     | value that requires debounce |
+| _wait_   | `number  | Ref<number>` | `false` | `0`                          | the number of milliseconds to delay |
