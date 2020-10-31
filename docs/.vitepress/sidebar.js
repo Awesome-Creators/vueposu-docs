@@ -1,174 +1,194 @@
-module.exports = {
-  guide: [
-    {
-      text: "Introduction",
-      link: "/",
-    },
-    {
-      text: "Getting Started",
-      link: "/guide/getting-started",
-    },
-  ],
+module.exports = [
+  {
+    text: "Introduction",
+    link: "/",
+  },
 
-  hooks: [
-    {
-      text: "DOM",
-      collapsable: true,
-      children: [
-        // {
-        //   text: "useAudio",
-        //   link: "/hooks/useAudio",
-        // },
-        {
-          text: "useBrowserTabChange",
-          link: "/hooks/useBrowserTabChange",
-        },
-        {
-          text: "useClickAway",
-          link: "/hooks/useClickAway",
-        },
-        {
-          text: "useClipboard",
-          link: "/hooks/useClipboard",
-        },
-        {
-          text: "useFavicon",
-          link: "/hooks/useFavicon",
-        },
-        {
-          text: "useFullscreen",
-          link: "/hooks/useFullscreen",
-        },
-        {
-          text: "useMouse",
-          link: "/hooks/useMouse",
-        },
-        {
-          text: "useScroll",
-          link: "/hooks/useScroll",
-        },
-        // {
-        //   text: "useScrollTo",
-        //   link: "/hooks/useScrollTo",
-        // },
-        {
-          text: "useTitle",
-          link: "/hooks/useTitle",
-        },
-      ],
-    },
+  {
+    text: "Getting Started",
+    link: "/getting-started",
+  },
 
-    {
-      text: "FUNCTIONALITY",
-      collapsable: true,
-      children: [
-        // {
-        //   text: "useCalculator",
-        //   link: "/hooks/useCalculator",
-        // },
-        {
-          text: "useCounter",
-          link: "/hooks/useCounter",
-        },
-        {
-          text: "useCounterInterval",
-          link: "/hooks/useCounterInterval",
-        },
-        {
-          text: "useDebounce",
-          link: "/hooks/useDebounce",
-        },
-        {
-          text: "useDebounceFn",
-          link: "/hooks/useDebounceFn",
-        },
-        {
-          text: "useDynamicList",
-          link: "/hooks/useDynamicList",
-        },
-        {
-          text: "useEventEmitter",
-          link: "/hooks/useEventEmitter",
-        },
-        {
-          text: "useQueue",
-          link: "/hooks/useQueue",
-        },
-        // {
-        //   text: "useRaf",
-        //   link: "/hooks/useRaf",
-        // },
-        {
-          text: "useRequest",
-          link: "/hooks/useRequest",
-        },
-        {
-          text: "useSet",
-          link: "/hooks/useSet",
-        },
-        {
-          text: "useSWR",
-          link: "/hooks/useSWR",
-        },
-        {
-          text: "useThrottle",
-          link: "/hooks/useThrottle",
-        },
-        {
-          text: "useThrottleFn",
-          link: "/hooks/useThrottleFn",
-        },
-        {
-          text: "useToggle",
-          link: "/hooks/useToggle",
-        },
-      ],
-    },
+  {
+    text: "DOM",
+    collapsable: true,
+    children: [
+      // {
+      //   text: "useAudio",
+      //   link: "/dom/useAudio",
+      // },
+      {
+        text: "useBrowserTabChange",
+        link: "/dom/useBrowserTabChange",
+      },
+      {
+        text: "useClickAway",
+        link: "/dom/useClickAway",
+      },
+      {
+        text: "useClipboard",
+        link: "/dom/useClipboard",
+      },
+      {
+        text: "useEventListener",
+        link: "/dom/useEventListener",
+      },
+      {
+        text: "useFavicon",
+        link: "/dom/useFavicon",
+      },
+      {
+        text: "useFullscreen",
+        link: "/dom/useFullscreen",
+      },
+      {
+        text: "useTitle",
+        link: "/dom/useTitle",
+      },
+    ],
+  },
 
-    {
-      text: "CACHE",
-      collapsable: true,
-      children: [
-        {
-          text: "useCookie",
-          link: "/hooks/useCookie",
-        },
-        {
-          text: "useLocalStorage",
-          link: "/hooks/useLocalStorage",
-        },
-        {
-          text: "useSessionStorage",
-          link: "/hooks/useSessionStorage",
-        },
-        {
-          text: "useWebStorage",
-          link: "/hooks/useWebStorage",
-        },
-      ],
-    },
+  {
+    text: 'SENSORS',
+    collapsable: true,
+    children: [
+      {
+        text: "useMouse",
+        link: "/sensors/useMouse",
+      },
+      {
+        text: "useScroll",
+        link: "/sensors/useScroll",
+      },
+      // {
+      //   text: "useScrollTo",
+      //   link: "/sensors/useScrollTo",
+      // },
+    ]
+  },
 
-    {
-      text: "SIDE EFFECT",
-      collapsable: true,
-      children: [
-        {
-          text: "useDebounceEffect",
-          link: "/hooks/useDebounceEffect",
-        },
-        {
-          text: "useInterval",
-          link: "/hooks/useInterval",
-        },
-        {
-          text: "useThrottleEffect",
-          link: "/hooks/useThrottleEffect",
-        },
-        {
-          text: "useTimeout",
-          link: "/hooks/useTimeout",
-        },
-      ],
-    },
-  ],
-};
+  {
+    text: "STATE",
+    collapsable: true,
+    children: [
+      // {
+      //   text: "useCalculator",
+      //   link: "/state/useCalculator",
+      // },
+      {
+        text: "useCounter",
+        link: "/state/useCounter",
+      },
+      {
+        text: "useCounterInterval",
+        link: "/state/useCounterInterval",
+      },
+      {
+        text: "useDynamicList",
+        link: "/state/useDynamicList",
+      },
+      {
+        text: "useQueue",
+        link: "/state/useQueue",
+      },
+      {
+        text: "useSet",
+        link: "/state/useSet",
+      },
+      {
+        text: "useToggle",
+        link: "/state/useToggle",
+      },
+    ],
+  },
+
+  {
+    text: "SWR",
+    collapsable: true,
+    children: [{
+      text: 'useSWR',
+      link: '/swr/useSWR',
+    }]
+  },
+
+  {
+    text: "CACHE",
+    collapsable: true,
+    children: [
+      {
+        text: "useCookie",
+        link: "/cache/useCookie",
+      },
+      {
+        text: "useLocalStorage",
+        link: "/cache/useLocalStorage",
+      },
+      {
+        text: "useSessionStorage",
+        link: "/cache/useSessionStorage",
+      },
+      {
+        text: "useWebStorage",
+        link: "/cache/useWebStorage",
+      },
+    ],
+  },
+
+  {
+    text: "SIDE EFFECT",
+    collapsable: true,
+    children: [
+      {
+        text: "useDebounce",
+        link: "/side-effect/useDebounce",
+      },
+      {
+        text: "useDebounceEffect",
+        link: "/side-effect/useDebounceEffect",
+      },
+      {
+        text: "useDebounceFn",
+        link: "/side-effect/useDebounceFn",
+      },
+      {
+        text: "useEventEmitter",
+        link: "/side-effect/useEventEmitter",
+      },
+      {
+        text: "useRequest",
+        link: "/side-effect/useRequest",
+      },
+      {
+        text: "useThrottle",
+        link: "/side-effect/useThrottle",
+      },
+      {
+        text: "useThrottleEffect",
+        link: "/side-effect/useThrottleEffect",
+      },
+      {
+        text: "useThrottleFn",
+        link: "/side-effect/useThrottleFn",
+      },
+    ],
+  },
+
+  {
+    text: "ANIMATION",
+    collapsable: true,
+    children: [
+      {
+        text: "useInterval",
+        link: "/animation/useInterval",
+      },
+      // {
+      //   text: "useRaf",
+      //   link: "/side-effect/useRaf",
+      // },
+      {
+        text: "useTimeout",
+        link: "/animation/useTimeout",
+      },
+    ]
+  },
+];

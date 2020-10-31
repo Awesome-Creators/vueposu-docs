@@ -2,4 +2,4 @@
 title: Gettting Started
 ---
 
-getting started
+# Getting Started

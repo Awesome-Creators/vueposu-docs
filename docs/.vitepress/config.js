@@ -11,24 +11,13 @@ module.exports = {
     search: {},
     nav: [
       {
-        text: "Guide",
-        link: "/",
-      },
-      {
-        text: "Hooks",
-        link: sidebar.hooks[0].children[0].link,
-      },
-      {
         text: "GitHub",
         link: "https://github.com/Awesome-Creators/vueposu",
       },
     ],
-    sidebar: {
-      '/': sidebar.guide,
-      '/hooks/': sidebar.hooks
-    },
-    // editLinks: true,
-    // editLinkText: 'Help us improve this page!',
-    // lastUpdated: true
+    sidebar,
+    editLinks: true,
+    editLinkText: 'Help us improve this page!',
+    lastUpdated: true
   },
 };
