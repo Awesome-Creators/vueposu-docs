@@ -11,7 +11,7 @@ title: useDebounce
 ## Usage
 
 <script>
-import UseDebounceDemo from './../.vitepress/components/UseDebounceDemo.vue'
+import UseDebounceDemo from '../.vitepress/components/side-effect/UseDebounceDemo.vue'
 
 export default {
   components: {
@@ -19,37 +19,13 @@ export default {
   }
 }
 </script>
-<UseDebounceDemo />
+<div id="UseDebounceDemo" class="container">
+  <UseDebounceDemo />
+</div>
 
-```vue
-<template>
-  <div>
-    <p>Typed text: <input type="text" v-model="typed" /></p>
-    <p>Debounced text: {{ debouncedValue }}</p>
-  </div>
-</template>
-
-<script lang="ts">
-import { ref } from "vue";
-import { useDebounce } from "vueposu";
-
-export default {
-  setup() {
-    const typed = ref("");
-    const debouncedValue = useDebounce(typed, 400);
-
-    return {
-      typed,
-      debouncedValue,
-    };
-  },
-};
-</script>
-```
+<<< ./docs/.vitepress/components/side-effect/UseDebounceDemo.vue
 
 <br />
-
-<style>code { line-height: 1.85em; }</style>
 
 ## Result
 

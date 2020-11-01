@@ -4,11 +4,11 @@ title: Introduction
 
 # Introduction
 
-## What is Vueposu?
+## What is vueposu?
 
-[Vueposu](https://github.com/Awesome-Creators/vueposu) is a hooks library based on [Vue Composition-API](https://composition-api.vuejs.org/). 
+`vueposu` is a hooks library based on `Vue Composition-API`. 
 
-So before start, you need to know the basic usage of Vue and Vue Composition-API.
+So before start, you need to know the basic usage of [Vue](https://v3.vuejs.org/) and [Vue Composition-API](https://composition-api.vuejs.org/).
 
 <br />
 

@@ -11,7 +11,7 @@ title: useClipboard
 ## Usage
 
 <script>
-import UseClipboardDemo from './../.vitepress/components/UseClipboardDemo.vue'
+import UseClipboardDemo from '../.vitepress/components/dom/UseClipboardDemo.vue'
 
 export default {
   components: {
@@ -19,52 +19,13 @@ export default {
   }
 }
 </script>
-<UseClipboardDemo />
+<div id="UseClipboardDemo" class="container">
+  <UseClipboardDemo />
+</div>
 
-```vue
-<template>
-  <div>
-    <template v-if="supported">
-      <p>Current copied text: {{ text }}</p>
-      <p>
-        <input v-model="input" />
-        <button @click="copy(input)">copy</button>
-      </p>
-    </template>
-    <template v-else>
-      It is seems like your browser does not support this fresh
-      <a
-        href="https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API"
-        target="_blank"
-        >Clipboard API</a
-      >.
-    </template>
-  </div>
-</template>
-
-<script lang="ts">
-import { ref } from "vue";
-import { useClipboard } from "vueposu";
-
-export default {
-  setup() {
-    const input = ref();
-    const { copy, text, supported } = useClipboard();
-
-    return {
-      input,
-      copy,
-      text,
-      supported,
-    };
-  },
-};
-</script>
-```
+<<< ./docs/.vitepress/components/dom/UseClipboardDemo.vue
 
 <br />
-
-<style>code { line-height: 1.85em; }</style>
 
 ## Result
 

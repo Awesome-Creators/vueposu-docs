@@ -11,7 +11,7 @@ title: useDebounceFn
 ## Usage
 
 <script>
-import UseDebounceFnDemo from './../.vitepress/components/UseDebounceFnDemo.vue'
+import UseDebounceFnDemo from '../.vitepress/components/side-effect/UseDebounceFnDemo.vue'
 
 export default {
   components: {
@@ -19,37 +19,13 @@ export default {
   }
 }
 </script>
-<UseDebounceFnDemo />
+<div id="UseDebounceFnDemo" class="container">
+  <UseDebounceFnDemo />
+</div>
 
-```vue
-<template>
-  <div>
-    <p>count: {{ count }}</p>
-    <p><button @click="debounced">Click me faster!</button></p>
-  </div>
-</template>
-
-<script lang="ts">
-import { ref } from "vue";
-import { useDebounceFn } from "vueposu";
-
-export default {
-  setup() {
-    const count = ref(0);
-    const debounced = useDebounceFn(() => count.value++, 400);
-
-    return {
-      count,
-      debounced,
-    };
-  },
-};
-</script>
-```
+<<< ./docs/.vitepress/components/side-effect/UseDebounceFnDemo.vue
 
 <br />
-
-<style>code { line-height: 1.85em; }</style>
 
 ## Result
 

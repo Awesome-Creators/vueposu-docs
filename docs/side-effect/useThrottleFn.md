@@ -11,7 +11,7 @@ title: useThrottleFn
 ## Usage
 
 <script>
-import UseThrottleFnDemo from './../.vitepress/components/UseThrottleFnDemo.vue'
+import UseThrottleFnDemo from '../.vitepress/components/side-effect/UseThrottleFnDemo.vue'
 
 export default {
   components: {
@@ -19,37 +19,13 @@ export default {
   }
 }
 </script>
-<UseThrottleFnDemo />
+<div id="UseThrottleFnDemo" class="container">
+  <UseThrottleFnDemo />
+</div>
 
-```vue
-<template>
-  <div>
-    <p>count: {{ count }}</p>
-    <p><button @click="throttled">Click me faster!</button></p>
-  </div>
-</template>
-
-<script lang="ts">
-import { ref } from "vue";
-import { useThrottleFn } from "vueposu";
-
-export default {
-  setup() {
-    const count = ref(0);
-    const throttled = useThrottleFn(() => count.value++, 400);
-
-    return {
-      count,
-      throttled,
-    };
-  },
-};
-</script>
-```
+<<< ./docs/.vitepress/components/side-effect/UseThrottleFnDemo.vue
 
 <br />
-
-<style>code { line-height: 1.85em; }</style>
 
 ## Result
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <p>state: {{ state }}</p>
     <p>
       <button @click="toggle()">toggle</button
@@ -25,16 +25,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.container {
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-}
-
-.container button {
-  margin-right: 6px;
-}
-</style>

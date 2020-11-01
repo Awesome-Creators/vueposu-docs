@@ -11,7 +11,7 @@ title: useFullscreen
 ## Usage
 
 <script>
-import UseFullscreenDemo from './../.vitepress/components/UseFullscreenDemo.vue'
+import UseFullscreenDemo from '../.vitepress/components/dom/UseFullscreenDemo.vue'
 
 export default {
   components: {
@@ -19,54 +19,13 @@ export default {
   }
 }
 </script>
-<UseFullscreenDemo />
+<div id="UseFullscreenDemo" class="container">
+  <UseFullscreenDemo />
+</div>
 
-```vue
-<template>
-  <div ref="container">
-    <p>is fullscreen: {{ isFullscreen }}</p>
-    <p>fullscreen times: {{ count }}</p>
-    <p>
-      <button @click="setFullscreen">set fullscreen</button>
-      <button @click="enterFullscreen">exit fullscreen</button>
-      <button @click="toggleFullscreen()">toggle fullscreen</button>
-    </p>
-  </div>
-</template>
-
-<script lang="ts">
-import { ref } from "vue";
-import { useFullscreen } from "vueposu";
-
-export default {
-  setup() {
-    const container = ref();
-    const count = ref(0);
-    const {
-      isFullscreen,
-      enterFullscreen,
-      exitFullscreen,
-      toggleFullscreen,
-    } = useFullscreen(container, () => {
-      if (isFullscreen.value) count.value++;
-    });
-
-    return {
-      isFullscreen,
-      enterFullscreen,
-      exitFullscreen,
-      toggleFullscreen,
-      container,
-      count,
-    };
-  },
-};
-</script>
-```
+<<< ./docs/.vitepress/components/dom/UseFullscreenDemo.vue
 
 <br />
-
-<style>code { line-height: 1.85em; }</style>
 
 ## Result
 

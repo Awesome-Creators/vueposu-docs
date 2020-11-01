@@ -1,7 +1,7 @@
 const sidebar = require("./sidebar");
 
 module.exports = {
-  title: "Vueposu",
+  title: "vueposu",
   description: "A hooks library based on Vue composition-api",
 
   docsRepo: 'Awesome-Creators/vueposu-doc',

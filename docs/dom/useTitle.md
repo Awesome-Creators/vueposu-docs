@@ -11,7 +11,7 @@ title: useTitle
 ## Usage
 
 <script>
-import UseTitleDemo from './../.vitepress/components/UseTitleDemo.vue'
+import UseTitleDemo from '../.vitepress/components/dom/UseTitleDemo.vue'
 
 export default {
   components: {
@@ -19,37 +19,13 @@ export default {
   }
 }
 </script>
-<UseTitleDemo />
+<div id="UseTitleDemo" class="container">
+  <UseTitleDemo />
+</div>
 
-```vue
-<template>
-  <div>
-    <p>
-      current title: <input v-model="title" />
-      <button @click="restoreTitle">restore title</button>
-    </p>
-  </div>
-</template>
-
-<script lang="ts">
-import { useTitle } from "vueposu";
-
-export default {
-  setup() {
-    const { title, restoreTitle } = useTitle('custom title', false);
-
-    return {
-      title,
-      restoreTitle,
-    };
-  },
-};
-</script>
-```
+<<< ./docs/.vitepress/components/dom/UseTitleDemo.vue
 
 <br />
-
-<style>code { line-height: 1.85em; }</style>
 
 ## Result
 

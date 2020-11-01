@@ -11,7 +11,7 @@ title: useThrottle
 ## Usage
 
 <script>
-import UseThrottleDemo from './../.vitepress/components/UseThrottleDemo.vue'
+import UseThrottleDemo from '../.vitepress/components/side-effect/UseThrottleDemo.vue'
 
 export default {
   components: {
@@ -19,37 +19,13 @@ export default {
   }
 }
 </script>
-<UseThrottleDemo />
+<div id="UseThrottleDemo" class="container">
+  <UseThrottleDemo />
+</div>
 
-```vue
-<template>
-  <div>
-    <p>Typed text: <input type="text" v-model="typed" /></p>
-    <p>Throttled text: {{ throttledValue }}</p>
-  </div>
-</template>
-
-<script lang="ts">
-import { ref } from "vue";
-import { useThrottled } from "vueposu";
-
-export default {
-  setup() {
-    const typed = ref("");
-    const throttledValue = Throttled(typed, 400);
-
-    return {
-      typed,
-      throttledValue
-    };
-  },
-};
-</script>
-```
+<<< ./docs/.vitepress/components/side-effect/UseThrottleDemo.vue
 
 <br />
-
-<style>code { line-height: 1.85em; }</style>
 
 ## Result
 

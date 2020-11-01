@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <span class="upload">
       <img v-if="icon" :src="icon" />
       <template v-else>Upload icon</template>
@@ -48,45 +48,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.container {
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.container .upload {
-  width: 128px;
-  height: 128px;
-  border-radius: 2px;
-  border: 1px dashed var(--border-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.container .upload img {
-  width: 104px;
-  height: 104px;
-}
-
-.container .upload input[type="file"] {
-  width: 128px;
-  height: 128px;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  cursor: pointer;
-  position: absolute;
-}
-
-.container button {
-  margin-left: 12px;
-}
-</style>

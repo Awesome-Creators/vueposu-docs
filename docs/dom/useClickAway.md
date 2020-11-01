@@ -11,7 +11,7 @@ title: useClickAway
 ## Usage
 
 <script>
-import UseClickAwayDemo from './../.vitepress/components/UseClickAwayDemo.vue'
+import UseClickAwayDemo from '../.vitepress/components/dom/UseClickAwayDemo.vue'
 
 export default {
   components: {
@@ -19,46 +19,11 @@ export default {
   }
 }
 </script>
-<UseClickAwayDemo />
+<div id="UseClickAwayDemo" class="container">
+  <UseClickAwayDemo />
+</div>
 
-```vue
-<template>
-  <div>
-    <p>count: {{ count }}</p>
-    <p>
-      <button ref="a">don't click me</button>
-      <button ref="b">click me outside</button>
-    </p>
-  </div>
-</template>
-
-<script lang="ts">
-import { ref } from "vue";
-import { useClickAway } from "vueposu";
-
-export default {
-  setup() {
-    const count = ref(0);
-    const a = ref();
-    const b = ref();
-
-    useClickAway([a, b], () => {
-      count.value += 1;
-    });
-
-    return {
-      count,
-      a,
-      b,
-    };
-  },
-};
-</script>
-```
-
-<br />
-
-<style>code { line-height: 1.85em; }</style>
+<<< ./docs/.vitepress/components/dom/UseClickAwayDemo.vue
 
 <br />
 

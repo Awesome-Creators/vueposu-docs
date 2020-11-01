@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <p>x: {{ x }}</p>
     <p>y: {{ y }}</p>
     <div ref="div" style="width: 300px; height: 300px; border: 1px solid; overflow: auto;">
@@ -25,12 +25,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.container {
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-}
-</style>

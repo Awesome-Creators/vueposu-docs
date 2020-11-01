@@ -1,5 +1,5 @@
 <template>
-  <div class="container" ref="container">
+  <div ref="container">
     <p>is fullscreen: {{ isFullscreen }}</p>
     <p>fullscreen times: {{ count }}</p>
     <p>
@@ -38,17 +38,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.container {
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  background-color: #fff;
-}
-
-.container button {
-  margin-right: 6px;
-}
-</style>
