@@ -1,29 +1,29 @@
 ---
-title: useBrowserTabChange
+title: usePageHidden
 ---
 
-# useBrowserTabChange
+# usePageHidden
 
-> A hook that can handle change event when current page display change.
+> A hook that can handle event when current page display change.
 
 <br />
 
 ## Usage
 
 <script>
-import UseBrowserTabChangeDemo from '../.vitepress/components/dom/UseBrowserTabChangeDemo.vue'
+import UsePageHiddenDemo from '../.vitepress/components/dom/UsePageHiddenDemo.vue'
 
 export default {
   components: {
-    UseBrowserTabChangeDemo
+    UsePageHiddenDemo
   }
 }
 </script>
-<div id="UseBrowserTabChangeDemo" class="container">
-  <UseBrowserTabChangeDemo />
+<div id="UsePageHiddenDemo" class="container">
+  <UsePageHiddenDemo />
 </div>
 
-<<< ./docs/.vitepress/components/dom/UseBrowserTabChangeDemo.vue
+<<< ./docs/.vitepress/components/dom/UsePageHiddenDemo.vue
 
 <br />
 

@@ -14,15 +14,15 @@ So before start, you need to know the basic usage of [Vue](https://v3.vuejs.org/
 
 ## The name means:
 
-> 🧭 Vue's Eternal Pose (永久指针, 永久指針エターナルポース, Etānaru Pōsu)
+> 🧭 &nbsp;&nbsp;Vue's Eternal Pose (永久指针, 永久指針エターナルポース, Etānaru Pōsu) 
 
-—— From One Piece.
+—— From [One Piece](https://en.wikipedia.org/wiki/One_Piece#cite_note-EPose-29).
 
 <br />
 
 ## Thanks
 
-In no particular order, Vueposu is inspired by these great awesome works:
+In no particular order, vueposu is inspired by these great awesome works:
 
 - [react-use](https://github.com/streamich/react-use)
 - [vueuse](https://github.com/antfu/vueuse)

@@ -6,12 +6,12 @@
 
 <script lang="ts">
 import { ref } from "vue";
-import { useBrowserTabChange, useTitle } from "vueposu";
+import { usePageHidden, useTitle } from "vueposu";
 
 export default {
   setup() {
     const { title, restoreTitle } = useTitle(null, false);
-    useBrowserTabChange((isHidden) => {
+    usePageHidden((isHidden) => {
       if (isHidden) {
         title.value = "page is hidden !";
       } else {

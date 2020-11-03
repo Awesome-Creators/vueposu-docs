@@ -18,10 +18,6 @@ module.exports = [
       //   link: "/dom/useAudio",
       // },
       {
-        text: "useBrowserTabChange",
-        link: "/dom/useBrowserTabChange",
-      },
-      {
         text: "useClickAway",
         link: "/dom/useClickAway",
       },
@@ -40,6 +36,10 @@ module.exports = [
       {
         text: "useFullscreen",
         link: "/dom/useFullscreen",
+      },
+      {
+        text: "usePageHidden",
+        link: "/dom/usePageHidden",
       },
       {
         text: "useTitle",
