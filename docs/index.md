@@ -6,6 +6,8 @@ title: Introduction
 
 ## What is vueposu?
 
+<img src=".vitepress/public/assets/logo.svg" width="180" alt="logo" />
+
 `vueposu` is a hooks library based on `Vue Composition-API`. 
 
 So before start, you need to know the basic usage of [Vue](https://v3.vuejs.org/) and [Vue Composition-API](https://composition-api.vuejs.org/).

@@ -7,7 +7,7 @@ module.exports = {
   docsRepo: 'Awesome-Creators/vueposu-doc',
 
   themeConfig: {
-    // logo: ".vitepress/logo.jpg",
+    // logo: "/assets/logo.svg",
     search: {},
     nav: [
       {
