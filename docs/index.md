@@ -16,7 +16,7 @@ So before start, you need to know the basic usage of [Vue](https://v3.vuejs.org/
 
 > 🧭 &nbsp;&nbsp;Vue's Eternal Pose (永久指针, 永久指針エターナルポース, Etānaru Pōsu) 
 
-—— From [One Piece](https://en.wikipedia.org/wiki/One_Piece#cite_note-EPose-29).
+—— From [One Piece](https://onepiece.fandom.com/wiki/Eternal_Pose). <!-- (https://en.wikipedia.org/wiki/One_Piece#cite_note-EPose-29) -->
 
 <br />
 
