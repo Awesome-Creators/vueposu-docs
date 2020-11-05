@@ -4,10 +4,10 @@
     "build": "vitepress build docs"
   },
   "devDependencies": {
-    "vitepress": "git+https://github.com/yuxino/vitepress.git#work"
+    "vitepress": "^0.7.2"
   },
   "dependencies": {
-    "vue": "^3.0.0",
-    "vueposu": "^0.2.1"
+    "vue": "^3.0.2",
+    "vueposu": "^0.2.9"
   }
 }

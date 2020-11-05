@@ -7,12 +7,12 @@
 
 <script lang="ts">
 import { ref } from "vue";
-import { useThrottled } from "vueposu";
+import { useThrottle } from "vueposu";
 
 export default {
   setup() {
     const typed = ref("");
-    const throttledValue = Throttled(typed, 400);
+    const throttledValue = useThrottle(typed, 400);
 
     return {
       typed,

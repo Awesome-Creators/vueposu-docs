@@ -1148,9 +1148,9 @@ is-binary-path@~2.1.0:
     binary-extensions "^2.0.0"
 
 is-core-module@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.0.0.tgz#58531b70aed1db7c0e8d4eb1a0a2d1ddd64bd12d"
-  integrity sha512-jq1AH6C8MuteOoBPwkxHafmByhL9j5q4OaPGdbuD+ZtQJVzH+i6E3BJDQcBA09k57i2Hh2yQbEG8yObZ0jdlWw==
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.1.0.tgz#a4cc031d9b1aca63eecbd18a650e13cb4eeab946"
+  integrity sha512-YcV7BgVMRFRua2FqQzKtTDMz8iCuLEyGKjr70q8Zm1yy2qKcurbFEd79PAdHV77oL3NrAaOVQIbMmiHQCHB7ZA==
   dependencies:
     has "^1.0.3"
 
@@ -2240,7 +2240,7 @@ vite@^1.0.0-rc.9:
     vue "^3.0.2"
     ws "^7.3.1"
 
-vitepress@^0.7.0:
+vitepress@^0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/vitepress/-/vitepress-0.7.2.tgz#561133b1ab7cb681946371ad3bbd02c6ca45ddbc"
   integrity sha512-3esAeqeFpa6kqydooqbs3PU3yM15RGL63FisaS4mU+8SUKxYq4Hcmp+5guF/aqFTZF2tYIvP3gxOSzCCsZMd7w==
@@ -2270,7 +2270,7 @@ vue-demi@latest:
   resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.4.1.tgz#2261b8afe57b99ef4a6ee82a7bd2e6fe471bdcde"
   integrity sha512-3xxnqY426eMKhmYdNygYwOvuaJlrgP+aSZLiD5GdCF7cBsMNmUZM7g3RL0NqIuY19WB5CCzuFbi/xW1Nd053xw==
 
-vue@^3.0.0, vue@^3.0.2:
+vue@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.0.2.tgz#9d5b7b2983f35e64a34d13c7c9d6831239feca3c"
   integrity sha512-ciKFjutKRs+2Vbvgrist1oDd5wZQqtOel/K//ku54zLbf8tcTV+XbyAfanTHcTkML9CUj09vnC+y+5uaOz2/9g==
@@ -2279,10 +2279,10 @@ vue@^3.0.0, vue@^3.0.2:
     "@vue/runtime-dom" "3.0.2"
     "@vue/shared" "3.0.2"
 
-vueposu@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/vueposu/-/vueposu-0.2.1.tgz#51aad8cf6af29184f0090d71c2b5746a17feda84"
-  integrity sha512-/tOLXWucczPoL/acA1ccfkpMsnv1W07ddKCSl27csDTpu+5FbfeR5j8YyaSZf17CPk74Ft43GubauLdhXkYDHw==
+vueposu@^0.2.9:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/vueposu/-/vueposu-0.2.9.tgz#1a47ee540b0ba30aacfae9c979b1a4d62f6612f7"
+  integrity sha512-d8xxTI7GO1KAcDLegiAr2/+pB0rN+gFa46enat63aU5TVgE4Ch0R7VFQqnDhRsuRvnT046YxYjLthna6xuuLAg==
   dependencies:
     lodash-es "^4.17.15"
     mathjs "^7.2.0"
