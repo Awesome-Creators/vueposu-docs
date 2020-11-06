@@ -2240,8 +2240,9 @@ vite@^1.0.0-rc.9:
     vue "^3.0.2"
     ws "^7.3.1"
 
-"vitepress@file:../vitepress":
+"vitepress@git+https://github.com/yuxino/vitepress.git#testing":
   version "0.7.2"
+  resolved "git+https://github.com/yuxino/vitepress.git#bd25e2c231468cf616ef87dc9a2912a052a00588"
   dependencies:
     "@vue/compiler-sfc" "^3.0.2"
     "@vue/server-renderer" "^3.0.2"
