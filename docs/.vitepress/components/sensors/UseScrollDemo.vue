@@ -2,7 +2,7 @@
   <div>
     <p>x: {{ x }}</p>
     <p>y: {{ y }}</p>
-    <div ref="div" style="width: 300px; height: 300px; border: 1px solid; overflow: auto;">
+    <div ref="div" style="width: 300px; height: 300px; border: 1px solid; overflow: scroll;">
       <div style="width: 3000px; height: 3000px;"></div>
     </div>
   </div>
