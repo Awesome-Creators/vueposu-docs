@@ -1,6 +1,7 @@
 <template>
   <div>
-    <p>count: {{ count }} [min: 1; max: 10; step: 2;]</p>
+    <p>count: {{ count }}</p>
+    <p>min: <input v-model="min" /> | max: <input v-model="max" /> | step: <input v-model="step" /></p>
     <p>
       <button @click="inc">inc</button>
       <button @click="inc(1)">inc(1)</button>
@@ -13,17 +14,24 @@
 </template>
 
 <script lang="ts">
+import { ref } from "vue";
 import { useCounter } from "vueposu";
 
 export default {
   setup() {
+    const min = ref(1);
+    const max = ref(10);
+    const step = ref(2);
     const { count, inc, dec, set, reset } = useCounter(2, {
-      min: 1,
-      max: 10,
-      step: 2,
+      min,
+      max,
+      step,
     });
     
     return {
+      min,
+      max,
+      step,
       count,
       inc,
       dec,

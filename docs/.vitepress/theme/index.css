@@ -26,38 +26,15 @@ code {
   margin-left: 6px;
 }
 
-.container#UseFaviconDemo {
+.container#UseFaviconDemo > div {
   display: flex;
   align-items: flex-end;
 }
 
-.container#UseFaviconDemo .upload {
-  width: 128px;
-  height: 128px;
-  border-radius: 2px;
-  border: 1px dashed var(--border-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.container#UseFaviconDemo .upload img {
-  width: 104px;
-  height: 104px;
-}
-
-.container#UseFaviconDemo .upload input[type="file"] {
-  width: 128px;
-  height: 128px;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  cursor: pointer;
-  position: absolute;
-}
-
 .container#UseFaviconDemo button {
   margin-left: 12px;
+}
+
+.container#UseCounterDemo input {
+  width: 30px;
 }

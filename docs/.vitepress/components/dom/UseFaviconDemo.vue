@@ -23,8 +23,11 @@ export default {
       if (file && file.type.indexOf("image") === 0) {
         const reader = new FileReader();
         reader.readAsDataURL(file);
-        reader.onload = function () {
-          icon.value = this.result;
+        reader.onloadend = (theFile) => {
+          icon.value = theFile.target.result;
+          setTimeout(() => {
+            target.value = null;
+          })
         };
       }
     };
@@ -48,3 +51,32 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.upload {
+  width: 128px;
+  height: 128px;
+  border-radius: 2px;
+  border: 1px dashed var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.upload img {
+  width: 104px;
+  height: 104px;
+}
+
+.upload input[type="file"] {
+  width: 128px;
+  height: 128px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+</style>

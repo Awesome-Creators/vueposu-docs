@@ -115,10 +115,10 @@ module.exports = [
     text: "CACHE",
     collapsable: true,
     children: [
-      {
-        text: "useCookie",
-        link: "/cache/useCookie",
-      },
+      // {
+      //   text: "useCookie",
+      //   link: "/cache/useCookie",
+      // },
       {
         text: "useLocalStorage",
         link: "/cache/useLocalStorage",
@@ -128,8 +128,8 @@ module.exports = [
         link: "/cache/useSessionStorage",
       },
       {
-        text: "useWebStorage",
-        link: "/cache/useWebStorage",
+        text: "useStorage",
+        link: "/cache/useStorage",
       },
     ],
   },

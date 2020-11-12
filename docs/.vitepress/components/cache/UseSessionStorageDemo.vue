@@ -8,13 +8,13 @@
 
 <script lang="ts">
 import { ref } from "vue";
-import { useLocalStorage } from "vueposu";
+import { useSessionStorage } from "vueposu";
 
 export default {
   setup() {
-      const state = useLocalStorage('useLocalStorage-demo-state', {
-        name: 'Tom',
-        type: 'Cat'
+      const state = useSessionStorage('useSessionStorage-demo-state', {
+        name: 'Jerry',
+        type: 'Mouse'
       });
 
       return {
