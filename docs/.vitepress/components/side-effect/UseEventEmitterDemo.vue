@@ -1,7 +1,7 @@
 <template>
   <div>
-      <p><input type="text" v-model="q" /> <button @click="emit(q)">say hi</button></p>
-      <p>hi, {{ a }}</p>
+    <p><input type="text" v-model="q" /> <button @click="emit(q)">say hi</button></p>
+    <p>hi, {{ a }}</p>
   </div>
 </template>
 

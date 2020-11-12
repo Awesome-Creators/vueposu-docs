@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <template v-if="supported">
       <p>Current copied text: {{ text }}</p>
       <p>
