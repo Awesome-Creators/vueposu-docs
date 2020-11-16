@@ -13,9 +13,9 @@ export default {
   setup() {
     const q = ref('');
     const a = ref('');
-    const { emit, useSubscription } = useEventEmitter();
+    const { emit, on } = useEventEmitter();
 
-    useSubscription((text) => {
+    on((text) => {
         a.value = text;
     });
 

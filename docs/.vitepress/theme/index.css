@@ -18,7 +18,9 @@ code {
 .container#UseClickAwayDemo button,
 .container#UseFullscreenDemo button,
 .container#UseCounterDemo button,
-.container#UseToggleDemo button {
+.container#UseToggleDemo button,
+.container#UseIntervalDemo button,
+.container#UseTimeoutDemo button {
   margin-right: 6px;
 }
 

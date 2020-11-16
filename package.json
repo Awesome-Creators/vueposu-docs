@@ -8,6 +8,6 @@
   },
   "dependencies": {
     "vue": "^3.0.2",
-    "vueposu": "^0.3.4"
+    "vueposu": "^0.3.6"
   }
 }
